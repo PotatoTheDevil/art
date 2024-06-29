@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>potato's portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/home.css" />
+		<link rel="stylesheet" href="assets/css/lightbox-locked.css" />
+	</head>
+	<body class="is-preload">
+                    <div class="container">
+                        <h4><br></h4>
+                        <h2><b>potato's portfolio</b></h2>
+                    </div>
+
+                    <div class="sticky">
+                        <h5><a target="_blank" href="https://discord.com/invite/N7cwyZzp" class="button"><img src="assets/images/discord.png">&nbsp;potatothedevil</a></h5>
+                    </div>
+                    <h6><br></h6>
+                    <section id="photos">
+                        <a href="./images/bakemono-scaled.png" data-lightbox="test" data-title=" "><img src="./images/bakemono-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/len-final-scaled.png" data-lightbox="test" data-title=" "><img src="./images/len-final-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/bea-final-scaled.png" data-lightbox="test" data-title=" "><img src="./images/bea-final-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/berk3-scaled.png" data-lightbox="test" data-title=" "><img src="./images/berk3-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/g5-final-scaled.png" data-lightbox="test" data-title=" "><img src="./images/g5-final-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/gto-final2-scaled.png" data-lightbox="test" data-title=" "><img src="./images/gto-final2-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/halloween-uf.png" data-lightbox="test" data-title=" "><img src="./images/halloween-uf.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/jason.png" data-lightbox="test" data-title=" "><img src="./images/jason.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/khobz-final.png" data-lightbox="test" data-title=" "><img src="./images/khobz-final.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/knight-final-scaled.png" data-lightbox="test" data-title=" "><img src="./images/knight-final-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/kurt.png" data-lightbox="test" data-title=" "><img src="./images/kurt.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/lonely-final-scaled.png" data-lightbox="test" data-title=" "><img src="./images/lonely-final-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/ran-final-scaled.png" data-lightbox="test" data-title=" "><img src="./images/ran-final-scaled.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/ran-final.png" data-lightbox="test" data-title=" "><img src="./images/ran-final.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/samurai-final.png" data-lightbox="test" data-title=" "><img src="./images/samurai-final.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/sniper.png" data-lightbox="test" data-title=" "><img src="./images/sniper.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/totoro4lou-final.png" data-lightbox="test" data-title=" "><img src="./images/totoro4lou-final.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/ultrakill.png" data-lightbox="test" data-title=" "><img src="./images/ultrakill.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/skylar-mini.png" data-lightbox="test" data-title=" "><img src="./images/skylar-mini.png" class="lazy" alt="" />
+                        </a>
+                        <a href="./images/yum.png" data-lightbox="test" data-title=" "><img src="./images/yum.png" class="lazy" alt="" />
+                        </a>
+                    </section>        
+<!-- Scripts -->
+            <script src='assets/js/jquery-1.11.3.js'></script>
+            <script src='assets/js/jquery.mobile-1.4.5.min.js'></script>
+            <script src="assets/js/jquery.lazy.min.js"></script>
+            <script src="assets/js/lightbox-locked.js"></script> <!-- this is an edited file -->
+            <script>
+            $.mobile.loading().hide();
+            </script>
+            <script>
+            $(function() {
+                $('.lazy').lazy({
+                    threshold: 500,
+                    effect: "fadeIn",
+                    effectTime: 400,
+                    enableThrottle: true,
+                    throttle: 50,
+                });
+            });
+            </script>
+            <script>
+                lightbox.option({
+                'showImageNumberLabel' : false,
+                'wrapAround': true,
+                'positionFromTop': 10,
+                'resizeDuration': 0,
+                'imageFadeDuration': 300,
+                'fadeDuration': 300,
+                'disableScrolling': true
+                })
+            </script>
+            <script>
+            function leftTrigger(){
+                    setTimeout(function(){
+                        $('.lightbox').on('swipeleft', leftHandler);
+
+                        function leftHandler(){
+                        $('.lb-next').click();
+                        }
+                    }, 0);
+                }
+
+                
+
+                function rightTrigger(){
+                    setTimeout(function(){
+                        $('.lightbox').on('swiperight', leftHandler);
+
+                        function leftHandler(){
+                        $('.lb-prev').click();
+                        }
+                    }, 0);
+                }
+            
+                $('[data-lightbox]').on('click', function(){
+                    leftTrigger();
+                    rightTrigger();
+                    $('[data-lightbox]').off('click')
+                });
+            </script>
+            <!-- 100% privacy-first analytics -->
+            <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+            <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+	</body>
+</html>
